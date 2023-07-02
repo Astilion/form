@@ -1,4 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-image: linear-gradient(315deg, #333 0%, #9a9898 74%);
   height: 100vh;
+}
+
+.wrapper {
+  width: 440px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+
+form {
+  padding: 40px;
+  margin-bottom: 30px;
+}
+form h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+form .form-box {
+  margin-bottom: 15px;
+}
+form .form-box label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+form .form-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 8px;
+}
+form .form-box .error-text {
+  margin: 5px 0 0 10px;
+  font-size: 14px;
+  color: rgb(159, 21, 21);
+  visibility: hidden;
+}
+form .formbox.error input {
+  border: 1px solid rgb(154, 152, 152);
+  background-color: rgba(154, 152, 152, 0.1);
+}
+form .form-box.error .error-text {
+  visibility: visible;
+}
+form .control-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+form .clear, form .send, form .close {
+  display: block;
+  padding: 10px 0;
+  margin-left: 10px;
+  width: 100px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form .send:hover,
+form .clear:hover,
+form .close:hover {
+  background-color: #9a9898;
+}
+form .popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: -300%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid black;
+  transition: top 0.5s;
+}
+form .popup p {
+  font-size: 28px;
+}
+form .popup .close {
+  margin-top: 20px;
+}
+form .show-popup {
+  top: 150px;
 }/*# sourceMappingURL=main.css.map */
