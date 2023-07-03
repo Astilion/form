@@ -48,7 +48,7 @@ form .form-box .error-text {
   color: rgb(159, 21, 21);
   visibility: hidden;
 }
-form .formbox.error input {
+form .form-box.error input {
   border: 1px solid rgb(154, 152, 152);
   background-color: rgba(154, 152, 152, 0.1);
 }
